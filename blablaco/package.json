@@ -1,0 +1,13 @@
+{
+  "name": "blablaco",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "bootstrap": "^3.3.7",
+    "less": "^2.7.3",
+    "meteor-node-stubs": "^0.3.2"
+  }
+}
