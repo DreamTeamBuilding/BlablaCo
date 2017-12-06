@@ -17,7 +17,7 @@
 #### Meteor sous Linux / OSX
 Exécuter
 
-_curl https://install.meteor.com/ | sh_
+```curl https://install.meteor.com/ | sh```
 
 Voilà
 
@@ -31,7 +31,7 @@ Redemarrer une console en mode admin.
 
 Exécuter 
 
-_choco install meteor_
+```choco install meteor```
 
 Voilà
 
@@ -41,7 +41,7 @@ Ouvrir une console dans le dossier de l'application.
 
 Exécuter 
 
-_meteor_
+```meteor```
 
 Cela peut prendre du temps pour la première exécution.
 
