@@ -12,3 +12,10 @@ FlowRouter.route('/test', {
     BlazeLayout.render('container', {content : "test"});
   }
 });
+
+FlowRouter.route('/inscription', {
+  name: 'inscription',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "inscription"});
+  }
+});
