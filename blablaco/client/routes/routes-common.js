@@ -12,3 +12,11 @@ FlowRouter.route('/test', {
     BlazeLayout.render('container', {content : "test"});
   }
 });
+
+
+FlowRouter.route('/searchMenu', {
+  name: 'searchMenu',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "searchMenu"});
+  }
+});
