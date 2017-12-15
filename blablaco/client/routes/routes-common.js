@@ -5,6 +5,12 @@ FlowRouter.route('/', {
   }
 });
 
+FlowRouter.route('/details', {
+  name: 'details',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "details"});
+  }
+});
 
 FlowRouter.route('/test', {
   name: 'test',
