@@ -21,7 +21,12 @@
 hr {
   width: 90%;
 }
-.glyphicon {
+
+.no-padding{
+  padding : 0;
+}
+
+.glyphicon, .fa {
 	font-size:1.2em;
 }
 
@@ -35,7 +40,28 @@ button:hover {
 	color:grey;
 	background-color:@violetD;
 }
-
+//make bootstrap columns full height
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+.center-table-trick{
+  display : table;
+  height : 100%;
+  width : 100%;
+}
+.center-cell-trick{
+  display : table-cell;
+  vertical-align : middle;
+  text-align : center;
+}
 //TODO rien à faire ici
 .price {
 	font-weight:bold;

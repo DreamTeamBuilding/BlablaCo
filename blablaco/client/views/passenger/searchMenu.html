@@ -4,30 +4,28 @@
       <h1 class="display-3">Bonjour,</h1>
       <p>Où désirez vous aller ?</p>
     </div>
+    <form action="" class="form-group">
+      <div class="row" id="recherche">
+        <div class="col-xs-10 col-md-8">
+            <input class="form-control input-lg" type="text" placeholder="Depart" name="depart">
+            <input class="form-control input-lg" type="text" placeholder="Arrivée" name="arrivee">
+        </div>
 
-    <div class="row" name="recherche">
-      <div class="col-xs-10 col-md-8">
-        <form>
-          <div class="row" name="depart">
-            <div class="form-group">
-            <input class="form-control input-lg" id="inputdefault" type="text" placeholder="Depart">
-            </div>
+        <div class="col-xs-1 col-md-2 no-padding">
+          <div class="center-table-trick">
+            <p class="center-cell-trick">
+              <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+            </p>
           </div>
-          <div class="row" name="arrivee">
-            <div class="form-group">
-              <input class="form-control input-lg" id="inputlg" type="text" placeholder="Arrivée">
-            </div>
-            </div>
-        </form>
+        </div>
+        <div class="col-xs-1 col-md-2 no-padding">
+          <div class="center-table-trick">
+            <p class="center-cell-trick">
+              <i class="fa fa-microphone" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div class="col-xs-1 col-md-2">
-        <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
-      </div>
-      <div class="col-xs-1 col-md-2">
-        <i class="fa fa-microphone" aria-hidden="true"></i>
-      </div>
-
-    </div>
+    </form>
   </div>
 </template>
