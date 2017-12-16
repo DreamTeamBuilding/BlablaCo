@@ -35,6 +35,10 @@ Exécuter
 
 Voilà
 
+## Mettre à jour votre install du projet
+
+```meteor npm install```
+
 ## Lancer le projet 
 
 Ouvrir une console dans le dossier de l'application.

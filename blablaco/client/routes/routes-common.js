@@ -20,3 +20,10 @@ FlowRouter.route('/searchMenu', {
     BlazeLayout.render('container', {content : "searchMenu"});
   }
 });
+
+FlowRouter.route('/inscription', {
+  name: 'inscription',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "inscription"});
+  }
+});

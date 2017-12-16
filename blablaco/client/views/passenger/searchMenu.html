@@ -1,19 +1,33 @@
 <template name="searchMenu">
-  <div style="background-color:#22E569;">
-  <div class="jumbotron">
-    <h1 class="display-3">Bonjour,</h1>
-    <p>Où désirez vous aller ?</p>
+  <div class="searchMenu">
+    <div class="jumbotron">
+      <h1 class="display-3">Bonjour,</h1>
+      <p>Où désirez vous aller ?</p>
+    </div>
+
+    <div class="row" name="recherche">
+      <div class="col-xs-10 col-md-8">
+        <form>
+          <div class="row" name="depart">
+            <div class="form-group">
+            <input class="form-control input-lg" id="inputdefault" type="text" placeholder="Depart">
+            </div>
+          </div>
+          <div class="row" name="arrivee">
+            <div class="form-group">
+              <input class="form-control input-lg" id="inputlg" type="text" placeholder="Arrivée">
+            </div>
+            </div>
+        </form>
+      </div>
+
+      <div class="col-xs-1 col-md-2">
+        <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+      </div>
+      <div class="col-xs-1 col-md-2">
+        <i class="fa fa-microphone" aria-hidden="true"></i>
+      </div>
+
+    </div>
   </div>
-
-  <form>
-    <div class="form-group">
-    <input class="form-control" id="inputdefault" type="text" placeholder="Depart">
-    </div>
-
-    <div class="form-group">
-    <input class="form-control input-lg" id="inputlg" type="text" placeholder="Arrivée">
-    </div>
-</form>
-
-</div>
 </template>
