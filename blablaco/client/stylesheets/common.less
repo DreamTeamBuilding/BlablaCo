@@ -1,18 +1,5 @@
 //The common css goes here
-
-//Color theme
-//Main colors
-@blue1 : #0dccbe;
-@green1 : #22e569;
-@blue2 : #549994;
-@rose1 : #db5183;
-@violet1 : #96538d;
-//Other colors
-//D = darker
-//L = lighter
-@violetD : #83407a;
-
-
+@import "variables";
 
 .navbar {
   min-height: 40px;
@@ -30,14 +17,13 @@ hr {
 	font-size:1.2em;
 }
 
-button {
+button.btn {
 	color:white;
 	background-color:@violet1;
-	border-color:@violet1;
+	border-style : none;
 }
 
-button:hover {
-	color:grey;
+button.btn:hover {
 	background-color:@violetD;
 }
 //make bootstrap columns full height
