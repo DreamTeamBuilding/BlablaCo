@@ -1,3 +1,1 @@
-/*Template.sidebar(
 
-);*/

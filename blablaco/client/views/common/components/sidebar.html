@@ -1,5 +1,7 @@
 <template name="sidebar">
-  <div class="background">
+  <div class="background" id="sidebarComponent">
+    <div class="rightSide" onclick="HideShowSideBar()">
+    </div>
     <div class="sidemenu">
       <div class="user-infos">
         {{> profilInfos}}
@@ -18,4 +20,14 @@
       </div>
     </div>
   </div>
+  <script>
+    function HideShowSideBar() {
+      var x = document.getElementById("sidebarComponent");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
 </template>
