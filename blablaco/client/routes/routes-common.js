@@ -33,3 +33,10 @@ FlowRouter.route('/inscription', {
     BlazeLayout.render('container', {content : "inscription"});
   }
 });
+
+FlowRouter.route('/terms_of_use', {
+  name: 'terms_of_use',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "terms_of_use"});
+  }
+});
