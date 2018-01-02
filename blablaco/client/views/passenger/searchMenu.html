@@ -1,31 +1,57 @@
 <template name="searchMenu">
-  <div class="searchMenu">
-    <div class="jumbotron">
-      <h1 class="display-3">Bonjour,</h1>
-      <p>Où désirez vous aller ?</p>
-    </div>
-    <form action="javascript:void(0);" class="form-group">
-      <div class="row" id="recherche">
-        <div class="col-xs-10 col-md-8">
-            <input class="form-control input-lg" type="text" placeholder="Depart" name="depart">
-            <input class="form-control input-lg" type="text" placeholder="Arrivée" name="arrivee">
-        </div>
-
-        <div class="col-xs-1 col-md-2 no-padding">
-          <div class="center-table-trick">
-            <p class="center-cell-trick">
-              <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-1 col-md-2 no-padding">
-          <div class="center-table-trick">
-            <p class="center-cell-trick">
-              <i class="fa fa-microphone" aria-hidden="true"></i>
-            </p>
-          </div>
-        </div>
+  <div class="green-background">
+    {{> navbar}}
+    <div class="searchMenu">
+      <div class="jumbotron">
+        <h1 class="display-3">Bonjour,</h1>
+        <p>Où désirez vous aller ?</p>
       </div>
-    </form>
+      <form action="searchResults" class="form-group searchForm">
+        <div class="row">
+          <div class="col-xs-9 col-md-8">
+              <input class="form-control input-lg" type="text" placeholder="Depart" name="depart">
+              <hr>
+              <input class="form-control input-lg" type="text" placeholder="Arrivée" name="arrivee">
+          </div>
+          <div class="col-xs-1 col-md-2">
+            <div class="center-table-trick">
+              <p class="center-cell-trick">
+                <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-1 col-md-2">
+            <div class="center-table-trick">
+              <p class="center-cell-trick">
+                <span class="fa fa-microphone" aria-hidden="true"></span>
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="search-advanced-options">
+          <div class="row center-table-trick search-advanced-row">
+            <div class="col center-cell-trick">
+              Le <input class="" type="date" name="date">
+            </div>
+          </div>
+          <div class="row center-table-trick search-advanced-row">
+            <div class="col center-cell-trick">
+              A partir de <input class="" type="time" name="time">
+            </div>
+          </div>
+          <div class="row center-table-trick search-advanced-row">
+            <div class="col center-cell-trick">
+              <input type="checkbox" name="round-trip">Aller-Retour
+            </div>
+          </div>
+          <div class="row center-table-trick search-advanced-row">
+            <div class="col center-cell-trick">
+              <button type="submit" class="btn btn-default">Rechercher</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
