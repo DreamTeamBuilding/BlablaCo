@@ -40,3 +40,10 @@ FlowRouter.route('/terms_of_use', {
     BlazeLayout.render('container', {content : "terms_of_use"});
   }
 });
+
+FlowRouter.route('/searchResults', {
+  name: 'searchResults',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "searchResults"});
+  }
+});
