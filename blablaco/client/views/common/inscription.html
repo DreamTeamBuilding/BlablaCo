@@ -2,28 +2,72 @@
   {{> navbar}}
   <div class="container-inscription container-fluid">
     <img src="/images/logo.png" class="logo" alt="Logo">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4">
-        <form action="searchMenu">
-          <input type="text" class="form-control" name="first_name" placeholder="Prénom">
-          <input type="text" class="form-control" name="lastname" placeholder="Nom">
-          <input type="date" class="form-control" name="bday" placeholder="Date de naissance" min="1900-01-01" max="2018-01-01">
-          <input type="email" class="form-control" name="email" placeholder="Email">
-          <input type="password" class="form-control" name="pwd" placeholder="Mot de passe">
-          <input type="password" class="form-control" name="pwd_check" placeholder="Confirmation du mot de passe">
-          <input type="checkbox" name="terms_of_use">J'accepte les <a href="terms_of_use">conditions d'utilisations</a>
-          <div class="row top-margin-10">
-            <div class="col-xs-6 col-xs-offset-3">
-              <button type="submit" class="btn btn-default">Inscription</button>
+
+    <div class="container-small-center">
+      <form class="stylised-menu" action="">
+
+          <div class="form-group">
+            <label for="lastname" class="col-xs-2 control-label">Nom</label>
+            <div class="col-xs-10">
+              <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Nom" required>
             </div>
           </div>
-          <div class="row top-margin-10">
+
+          <div class="form-group">
+            <label for="first-name" class="col-xs-3 control-label">Prénom</label>
+            <div class="col-xs-9">
+              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Prénom" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bday" class="col-xs-7 control-label">Date de naissance</label>
+            <div class="col-xs-5">
+              <input type="date" class="form-control" name="bday" id="bday" placeholder="Date de naissance" min="1900-01-01" max="2018-01-01"  required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="col-xs-3 control-label">Email</label>
+            <div class="col-xs-9">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="pwd" class="col-xs-5 control-label">Mot de passe</label>
+            <div class="col-xs-7">
+              <input type="password" class="form-control" name="pwd" id="pwd" placeholder="Mot de passe" required>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="pwd_check" class="col-xs-4 control-label">Confirmer</label>
+            <div class="col-xs-7">
+            <input type="password" class="form-control" name="pwd_check" id="pwd_check" placeholder="Confirmation du mot de passe" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="centered col-xs-12">
+              <input type="checkbox" name="terms_of_use">J'accepte les <a href="terms_of_use">conditions d'utilisations</a>
+            </label>
+          </div>
+
+          <div class="top-margin-10">
+            <div class="col-xs-6 col-xs-offset-3">
+              <button type="submit" class="btn btn-default full-width">Inscription</button>
+            </div>
+          </div>
+
+          <div class="top-margin-10">
             <div class="col-xs-6 col-xs-offset-3 centered">
                 <a href="/" class="small">Retour</a>
             </div>
           </div>
-        </form>
-      </div>
+      </form>
     </div>
+
   </div>
 </template>
