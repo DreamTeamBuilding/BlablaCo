@@ -1,11 +1,5 @@
 <template name="home">
-  <nav class="navbar navbar-default">
-    <div class="navbar-header">
-      <button type="button" class="btn btn-link" aria-label="Menu" onclick="HideShowSideBar()">
-        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-      </button>
-    </div>
-  </nav>
+  {{> navbar}}
   <div class="container-fluid">
     <img src="/images/logo.png" class="logo" alt="Logo">
     <div class="row">
@@ -25,5 +19,4 @@
       </div>
     </div>
   </div>
-  {{> sidebar}}
 </template>

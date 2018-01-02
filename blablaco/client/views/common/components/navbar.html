@@ -1,6 +1,22 @@
-<template name="sidebar">
+<template name="navbar">
+
+
+  <!--
+    navbar
+  -->
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="btn btn-link show-hide-menu" aria-label="Menu">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+    <!--
+      sidebar
+    -->
   <div class="background" id="sidebarComponent">
-    <div class="rightSide" onclick="HideShowSideBar()">
+    <div class="rightSide show-hide-menu">
     </div>
     <div class="sidemenu">
       <div class="user-infos">
@@ -20,14 +36,4 @@
       </div>
     </div>
   </div>
-  <script>
-    function HideShowSideBar() {
-      var x = document.getElementById("sidebarComponent");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  </script>
 </template>
