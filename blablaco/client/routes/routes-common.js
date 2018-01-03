@@ -20,13 +20,6 @@ FlowRouter.route('/test', {
 });
 
 
-FlowRouter.route('/searchMenu', {
-  name: 'searchMenu',
-  action(params, queryParams) {
-    BlazeLayout.render('container', {content : "searchMenu"});
-  }
-});
-
 FlowRouter.route('/inscription', {
   name: 'inscription',
   action(params, queryParams) {
@@ -38,12 +31,5 @@ FlowRouter.route('/terms_of_use', {
   name: 'terms_of_use',
   action(params, queryParams) {
     BlazeLayout.render('container', {content : "terms_of_use"});
-  }
-});
-
-FlowRouter.route('/searchResults', {
-  name: 'searchResults',
-  action(params, queryParams) {
-    BlazeLayout.render('container', {content : "searchResults"});
   }
 });
