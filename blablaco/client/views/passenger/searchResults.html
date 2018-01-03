@@ -1,3 +1,29 @@
 <template name="searchResults">
-  {{> navbar}}
+  <div class="row searchResultNavBar center-table-trick">
+    <form action="javascript:void(0);" class="form-group stylised-menu">
+      <div class="col-xs-1 center-cell-trick">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </div>
+      <div class="col-xs-5">
+        <input type="text">
+        <input type="text">
+      </div>
+      <div class="col-xs-1 center-cell-trick">
+        <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+      </div>
+      <div class="col-xs-4">
+        <input type="date">
+        <input type="time">
+      </div>
+      <div class="col-xs-1 center-cell-trick">
+        <span class="glyphicon glyphicon-filter" aria-hidden="true"></span><br>
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </div>
+    </form>
+  </div>
+  <div>
+    {{> singleSearchResult Prix="1€" Date="04/12/2017" Heure="8h18" Conducteur="Johnny H" Depart="La Doua" Arrivee="Bon Bio'" ProfilePicture="/images/johnny_h.png"}}
+    {{> singleSearchResult Prix="2€" Date="04/12/2017" Heure="9h00" Conducteur="Johnny Bravo" Depart="La Doua" Arrivee="Carrefour" ProfilePicture="/images/johnny_bravo.png"}}
+    {{> singleSearchResult Prix="2€" Date="04/12/2017" Heure="9h10" Conducteur="Peter Parker" Depart="La Doua" Arrivee="Bricoland" ProfilePicture="/images/spiderman.png"}}
+  </div>
 </template>

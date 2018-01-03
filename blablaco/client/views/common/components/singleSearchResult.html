@@ -1,0 +1,21 @@
+<template name="singleSearchResult">
+  <div class="row center-table-trick">
+    <div class="col-xs-3">
+      <div class="profile-picture">
+        <img src={{ProfilePicture}} alt="Avatar"/>
+      </div>
+    </div>
+    <div class="col-xs-1">
+      <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+    </div>
+    <div class="col-xs-6">
+      <strong>{{Conducteur}}</strong>
+      <p>{{Depart}} - {{Arrivee}}</p>
+      <p>{{Date}} à {{Heure}}</p>
+    </div>
+    <div class="col-xs-2">
+      <h2>{{Prix}}</h2>
+    </div>
+    <hr>
+  </div>
+</template>
