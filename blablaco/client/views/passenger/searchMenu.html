@@ -6,7 +6,7 @@
         <h1 class="display-3">Bonjour,</h1>
         <p>Où désirez vous aller ?</p>
       </div>
-      <form action="javascript:window.location.replace('/searchResults');" class="form-group searchForm stylised-menu">
+      <form action="/searchResults" method="POST" class="form-group searchForm stylised-menu">
         <div class="row">
           <div class="col-xs-9 col-md-8">
               <input class="form-control input-lg text-input-trigger" type="text" placeholder="Depart" id="depart-input" name="depart">
@@ -44,7 +44,7 @@
           </div>
           <div class="search-advanced-row">
             <div class="">
-              <button type="submit" class="btn btn-default">Rechercher</button>
+              <button type="submit" class="btn">Rechercher</button>
             </div>
           </div>
         </div>

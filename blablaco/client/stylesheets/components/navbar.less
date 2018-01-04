@@ -16,6 +16,7 @@
 .navbar-header{
   padding-top : 4px;
   padding-bottom : 4px;
+  width : 100%;
 }
 
 .navbar .glyphicon,.navbar  .fa {
@@ -48,8 +49,19 @@
   z-index : 1001; //dessiner par dessus les autres et de rightSide
 }
 
-.liens {
-
+.liens a{
+  display : block;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left : 25px;
+  color : black;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 1.1em;
+}
+.liens a:hover{
+  background-color: #E6E6E6;
+  text-decoration: none;
 }
 .user-infos{
   padding-left : 15px;
@@ -59,15 +71,6 @@
   margin : auto; //centrer
 }
 .sidemenu button {
-  width: 100%;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left : 25px;
-  text-align: left;
-  border: none;
-  color : black;
-  background-color: rgba(255, 255, 255, 0);
-  font-size: 1.1em;
 }
 
 .sidemenu hr{
@@ -76,5 +79,4 @@
 }
 
 .sidemenu button:hover{
-  background-color: #E6E6E6;
 }
