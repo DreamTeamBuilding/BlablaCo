@@ -17,6 +17,10 @@ td{
   vertical-align: middle;
 }
 
+label{
+  font-weight : normal;
+}
+
 .no-padding{
   padding : 0;
 }
@@ -48,7 +52,7 @@ td{
 	background-color:@violet1;
 	border-style : none;
 }
-.btn:hover {
+.btn:hover, .btn:focus {
 	color:white;
 	background-color:@violetD;
 }
@@ -57,7 +61,7 @@ td{
   color : @violet1;
 	background:none;
 }
-.btn-link:hover {
+.btn-link:hover, .btn-link:focus {
   color : @violetD;
 	background:none;
 }
@@ -68,7 +72,7 @@ td{
 	border : 1px solid @green1;
   font-weight : bold;
 }
-.btn.green:hover {
+.btn.green:hover, .btn.green:focus {
 	color:white;
 	background-color:@green1;
 	border-style : none;
