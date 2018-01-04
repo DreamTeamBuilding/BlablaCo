@@ -1,5 +1,5 @@
 
-FlowRouter.route('/searchMenu', {
+FlowRouter.route('/passenger', {
   name: 'searchMenu',
   action(params, queryParams) {
     BlazeLayout.render('container', {content : "searchMenu"});

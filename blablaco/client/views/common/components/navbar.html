@@ -11,15 +11,15 @@
       </button>
 
       {{#if equals mode 1}}
-      <button type="button" class="btn btn-link pull-right go-driver-mode" aria-label="Menu">
+      <a href="/driver" class="btn btn-link pull-right go-driver-mode" aria-label="Menu">
         <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
-      </button>
+      </a>
       {{/if}}
 
       {{#if equals mode 2}}
-      <button type="button" class="btn btn-link pull-right go-passenger-mode" aria-label="Menu">
+      <a href="/passenger" class="btn btn-link pull-right go-passenger-mode" aria-label="Menu">
         <span class="fa fa-hand-stop-o" aria-hidden="true"></span>
-      </button>
+      </a>
       {{/if}}
 
       <div class="nav-bar-title">
@@ -47,8 +47,8 @@
 
         {{#unless equals mode 0}}
         <hr>
-        <a href="#">Rechercher</a>
-        <a href="#">Proposer</a>
+        <a href="/passenger">Rechercher</a>
+        <a href="/driver">Proposer</a>
         <hr>
         <a href="#">Demandes</a>
         <a href="#">Messages</a>
