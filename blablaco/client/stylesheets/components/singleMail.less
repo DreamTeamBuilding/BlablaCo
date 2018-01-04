@@ -1,0 +1,38 @@
+@import "../variables";
+
+.container-mail{
+  border-bottom: 1px solid @blue2;
+  text-align : center;
+  padding : 5px 20px 5px 15px;
+  width : 100%;
+  color : black;
+  .fa{
+    font-weight: bold;
+    color : @violet1;
+  }
+  .size2{
+    width : 80px;
+    padding : 10px 10px 10px 15px;
+  }
+
+  .hour-text{
+    font-size : 0.8em;
+    color : #777;
+  }
+}
+.single-mail:hover{
+  background : #eee;
+}
+
+
+
+a.single-mail, a.single-mail:hover{
+    text-decoration: none;
+}
+
+.read-mail .container-mail{
+  color : #777;
+  .fa{
+    color : #777;
+  }
+}

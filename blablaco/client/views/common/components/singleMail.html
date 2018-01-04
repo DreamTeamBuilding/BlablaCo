@@ -1,0 +1,22 @@
+<template name="singleMail">
+  <a href="/discussion/idDuMail{{idDuMail}}" class="single-mail {{#if read}} read-mail{{/if}}">
+  <table class="container-mail">
+      <tr>
+        <td class="size2">
+          {{> avatar url=ProfilePicture}}
+        </td>
+        <td>
+            <strong>{{Destinataire}}</strong>
+            <p class="info">
+              <span>{{nbrTrajets}} trajet(s) en commun</span>
+            </p>
+        </td>
+        <td class="size2">
+          <span class="fa fa-envelope-o" aria-hidden="true"></span>
+          <br>
+          <span class="hour-text">{{Heure}}</span>
+        </td>
+      </tr>
+  </table>
+  </a>
+</template>
