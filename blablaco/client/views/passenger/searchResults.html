@@ -1,31 +1,57 @@
 <template name="searchResults">
-  <table class="searchResultNavBar full-width">
-    <form action="javascript:void(0);" class="form-group stylised-menu">
+  {{> navbar mode=1}}
+  <table class="searchResultNavBar">
+    <form action="" class="search-quick-menu">
       <tr>
         <td>
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <a href="/passenger" class="btn btn-link">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </a>
         </td>
         <td>
-          <input type="text">
-          <input type="text">
+          <input type="text" placeholder="Départ" id="depart-input" >
+          <input type="text" placeholder="Arrivée" id="arrivee-input" >
         </td>
         <td>
-          <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+          <button type="button" class="btn btn-link switch-button">
+            <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+          </button>
         </td>
         <td>
           <input type="date">
           <input type="time">
         </td>
         <td>
-          <span class="glyphicon glyphicon-filter" aria-hidden="true"></span><br>
-          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          <button type="button" class="btn btn-link">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </button>
         </td>
       </tr>
     </form>
   </table>
+
+  <div class="filter-params">
+    <div class="filters">
+       Here are all the filter
+      <br>
+      <br>
+      <span class="hide-filters">
+        Cacher les filtres <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><br>
+      </span>
+    </div>
+
+    <div class="replace-filters" hidden>
+      <span class="show-filters">
+        Afficher les filtres <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><br>
+      </span>
+    </div>
+  </div>
+
   <div>
-    {{> singleSearchResult Prix="1€" Date="04/12/2017" Heure="8h18" Conducteur="Johnny H" Depart="La Doua" Arrivee="Bon Bio'" ProfilePicture="/images/johnny_h.png"}}
-    {{> singleSearchResult Prix="2€" Date="04/12/2017" Heure="9h00" Conducteur="Johnny Bravo" Depart="La Doua" Arrivee="Carrefour" ProfilePicture="/images/johnny_bravo.png"}}
-    {{> singleSearchResult Prix="2€" Date="04/12/2017" Heure="9h10" Conducteur="Peter Parker" Depart="La Doua" Arrivee="Bricoland" ProfilePicture="/images/spiderman.png"}}
+
+    {{> singleSearchResult Prix="1" Date="04/12/2017" Heure="8h18" Conducteur="Johnny H" Depart="La Doua" Arrivee="Bon Bio'" ProfilePicture="/images/johnny_h.png"}}
+    {{> singleSearchResult Prix="2" Date="04/12/2017" Heure="9h00" Conducteur="Johnny Bravo" Depart="La Doua" Arrivee="Carrefour" ProfilePicture="/images/johnny_bravo.png"}}
+    {{> singleSearchResult Prix="2" Date="04/12/2017" Heure="9h10" Conducteur="Peter Parker" Depart="La Doua" Arrivee="Bricoland" ProfilePicture="/images/spiderman.png"}}
+
   </div>
 </template>
