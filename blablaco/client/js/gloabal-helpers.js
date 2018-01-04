@@ -1,6 +1,6 @@
 
 Template.registerHelper(
-    "nom", function (date) {
-        return ;
+    "equals", function (a,b) {
+        return a==b;
     }
 );

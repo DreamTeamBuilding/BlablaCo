@@ -4,11 +4,28 @@
   <!--
     navbar
   -->
-  <nav class="navbar navbar-default">
-    <div class="navbar-header">
-      <button type="button" class="btn btn-link show-hide-menu" aria-label="Menu">
+  <nav class="navbar navbar-default {{#unless equals mode 2}} green {{/unless}}{{#if equals mode 2}} blue {{/if}}">
+    <div class="navbar-header centered">
+      <button type="button" class="btn btn-link pull-left show-hide-menu" aria-label="Menu">
         <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
       </button>
+
+      {{#if equals mode 1}}
+      <button type="button" class="btn btn-link pull-right go-driver-mode" aria-label="Menu">
+        <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
+      </button>
+      {{/if}}
+
+      {{#if equals mode 2}}
+      <button type="button" class="btn btn-link pull-right go-passenger-mode" aria-label="Menu">
+        <span class="fa fa-hand-stop-o" aria-hidden="true"></span>
+      </button>
+      {{/if}}
+
+      <div class="nav-bar-title">
+        {{title}}
+      </div>
+
     </div>
   </nav>
 
@@ -19,10 +36,16 @@
     <div class="rightSide full-size show-hide-menu">
     </div>
     <div class="full-size sidemenu">
+
+      {{#unless equals mode 0}}
       <div class="user-infos">
         {{> profilInfos}}
       </div>
+      {{/unless}}
+
       <div class="liens">
+        
+        {{#unless equals mode 0}}
         <hr>
         <button>Rechercher</button>
         <button>Proposer</button>
@@ -31,9 +54,17 @@
         <button>Messages</button>
         <button>Historique</button>
         <hr>
+        {{/unless}}
+
         <button>Paramètres</button>
         <button>Aide</button>
         <hr>
+
+        {{#unless equals mode 0}}
+        <button onclick="javascript:window.location.replace('/');">Déconnexion</button>
+        <hr>
+        {{/unless}}
+
         <button type="button" class="btn btn-link show-hide-menu" aria-label="Close Menu">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         </button>
