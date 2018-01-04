@@ -22,6 +22,12 @@
       </a>
       {{/if}}
 
+      {{#if equals mode 3}}
+      <a href="#" onclick="history.go(-1)" class="btn btn-link pull-right" aria-label="Menu">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      {{/if}}
+
       <div class="nav-bar-title">
         {{title}}
       </div>
@@ -56,8 +62,8 @@
         <hr>
         {{/unless}}
 
-        <a href="#">Paramètres</a>
-        <a href="#">Aide</a>
+        <a href="/parameters">Paramètres</a>
+        <a href="/help">Aide</a>
         <hr>
 
         {{#unless equals mode 0}}
