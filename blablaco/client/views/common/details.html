@@ -1,20 +1,45 @@
 <template name="details">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-8 col-md-6">
-				{{> profilInfos}}
-			</div>
-			<div class="col-xs-4 col-md-6">
-				<p class="price">1€</p>
-			</div>
+	{{> navbar mode=1}}
+	<div class="container-details">
+
+		<p id="notification-reservation" class="container-notification" hidden>
+			Vous avez réservé le trajet.
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+			<br>
+			<span class="info">
+				Nous vous notifierons quand Johnny aura accepté votre demande.
+			</span>
+		</p>
+
+		<div id="notification-trajet-accepte" class="container-notification" hidden>
+			Vous avez réservé le trajet.
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+			<br>
+			<span class="info">
+				Johnny a accepté votre demande.
+			</span>
 		</div>
-		<div class="container details-action">
-			<div class="col-xs-5">
-				<button type="button" class="btn btn-primary">Envoyer un message</button>
-			</div>
-			<div class="col-xs-offset-2 col-xs-5">
-				<button type="button" class="btn btn-primary">Réserver</button>
-			</div>
+
+		<div>
+			{{> profilInfos}}
+			<p class="price">1€</p>
+		</div>
+
+		<div>
+			depart-arrivée
+		</div>
+
+		<p>
+			Nbr de places dispo
+		</p>
+
+		<p>
+			Volume accepté : ...
+		</p>
+
+		<div>
+			<button type="button" class="btn btn-primary">Envoyer un message</button>
+			<button type="button" class="btn btn-primary">Réserver</button>
 		</div>
 	</div>
 </template>

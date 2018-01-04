@@ -12,3 +12,11 @@ FlowRouter.route('/searchResults', {
     BlazeLayout.render('container', {content : "searchResults"});
   }
 });
+
+
+FlowRouter.route('/trajet/:id_trajet', {
+  name: 'details',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "details"});
+  }
+});

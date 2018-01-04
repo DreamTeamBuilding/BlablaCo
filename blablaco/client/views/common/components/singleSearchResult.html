@@ -2,20 +2,20 @@
   <table class="single-search-result">
     <tr>
       <td class="size2">
-        <div class="profile-picture">
-          <img src={{ProfilePicture}} alt="Avatar"/>
-        </div>
+        {{> avatar url=ProfilePicture}}
       </td>
       <td class="size1">
         <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
       </td>
       <td>
-        <strong>{{Conducteur}}</strong>
-        <p class="info">
-          <span>{{Depart}} - {{Arrivee}}</span>
-          <br>
-          <span>{{Date}} à {{Heure}}</span>
-        </p>
+        <a href="/trajet/idDuTrajet{{idDuTrajet}}">
+          <strong>{{Conducteur}}</strong>
+          <p class="info">
+            <span>{{Depart}} - {{Arrivee}}</span>
+            <br>
+            <span>{{Date}} à <strong>{{Heure}}</strong></span>
+          </p>
+        </a>
       </td>
       <td class="size1">
         <span class="price-text">{{Prix}} €</span>
