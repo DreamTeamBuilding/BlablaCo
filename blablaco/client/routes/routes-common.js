@@ -18,6 +18,21 @@ FlowRouter.route('/terms_of_use', {
   }
 });
 
+FlowRouter.route('/help', {
+  name: 'help',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "help"});
+  }
+});
+
+FlowRouter.route('/parameters', {
+  name: 'parameters',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "parameters"});
+  }
+});
+
+
 FlowRouter.route('/mails', {
   name: 'mailbox',
   action(params, queryParams) {
