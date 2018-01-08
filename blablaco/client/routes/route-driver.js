@@ -1,6 +1,6 @@
 FlowRouter.route('/driver', {
   name: 'driver',
   action(params, queryParams) {
-    BlazeLayout.render('container', {content : "driver"});
+    BlazeLayout.render('container', {content : "formAddTravel"});
   }
 });

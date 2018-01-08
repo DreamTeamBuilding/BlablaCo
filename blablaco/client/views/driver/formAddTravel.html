@@ -1,0 +1,86 @@
+<template name="formAddTravel">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  {{> navbar title="Proposer un trajet" mode=2}}
+  <div class="formAddTravel">
+    <form action="" method="POST" class="form-group searchForm stylised-menu">
+      <textarea class="" rows="3" type="text" placeholder="Détails du trajet..." id="input-details" name="details"></textarea>
+      <div class="container">
+        <div class="departure row">
+          <div class="col-sm ride">
+            <div class="circle"></div>
+            <div class="rectangle"></div>
+            <div class="arrow-down"></div>
+            <div class="circle"></div>
+          </div>
+          <div class="col-sm">
+            <div>
+              <label class="small italic">Départ à</label>
+              <input class=""  type="time" id="input-departure-hour" name="departure-hour">
+            </div>
+            <div>
+              <label class="small">De</label>
+              <input class="" type="text" id="input-departure" name="departure">
+            </div>
+            <div>
+              <label class="small italic">Arrivée à</label>
+              <input class=""  type="time" id="input-arrival-hour" name="arrival-hour">
+            </div>
+            <div>
+              <label class="small">Vers</label>
+              <input class="" type="text" id="input-arrival" name="arrival">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <label>Retour</label>
+          <input data-toggle="toggle" class="toggle-return" data-on="Oui" data-off="Non" type="checkbox" id="toggle-return" name="return" value="false">
+        </div>
+        <div class="return-form" hidden>
+          <div class="row">
+            <div class="col-sm ride">
+              <div class="circle"></div>
+              <div class="rectangle"></div>
+              <div class="arrow-down"></div>
+              <div class="circle"></div>
+            </div>
+            <div class="col-sm">
+              <div>
+                <label class="small italic">Départ à</label>
+                <input class="" type="time" id="input-return-departure-hour" name="return-departure-hour">
+              </div>
+              <div>
+                <label class="small">De</label>
+                <input class="" type="text" id="input-return-departure" name="return-departure">
+              </div>
+              <div>
+                <label class="small italic">Arrivée à</label>
+                <input class="" type="time" id="input-return-arrival-hour" name="return-arrival-hour">
+              </div>
+              <div>
+                <label class="small">Vers</label>
+                <input class="" type="text" id="input-return-arrival" name="return-arrival">
+              </div>
+            </div>
+          </div>
+        </div>
+        <label>Volume accepté</label>
+        <select class="form-control" id="input-bag-size">
+          <option>Petit sac</option>
+          <option>Sac de voyage</option>
+          <option>Valise</option>
+        </select>
+        <br>
+        <input class="" type="number" id="input-return-arrival" name="passengers-number">
+        <label>passager</label>
+        <br>
+        <input class="" type="number" id="input-return-arrival" name="price">
+        <label>€</label>
+        <br>
+        <div class="centered">
+          <button type="submit" class="btn">Valider</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</template>
