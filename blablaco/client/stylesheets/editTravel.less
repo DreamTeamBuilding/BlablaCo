@@ -1,0 +1,49 @@
+@import "variables";
+
+.container-request {
+    .request {
+      height:62px;
+    }
+    img {
+      vertical-align: middle;
+    }
+    p {
+      height:60px;
+      line-height: 60px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .action-request {
+      float: right;
+      .glyphicon {
+        color: @grey;
+      }
+      .accept-request {
+        color: @violet1;
+      }
+    }
+}
+
+.pending-request {
+  .request {
+    border-top: 1px solid @blue1;
+    border-bottom: 1px solid @blue1;
+  }
+}
+.accepted-request {
+  .request {
+    border-top: 1px solid @grey;
+    border-bottom: 1px solid @grey;
+  }
+}
+
+.delete-travel {
+  float:right;
+}
+
+.detail-travel {
+  background-color: white;
+  border: 1px solid @grey;
+  border-radius:5px;
+  color:@grey;
+}

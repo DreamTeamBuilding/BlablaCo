@@ -1,0 +1,27 @@
+<template name="formEditTravel">
+    {{> navbar title="Éditer un trajet" mode=2}}
+    <div class="container-details">
+      {{> travelHeader Prix="2" Nom="Johnny H" Avatar="/images/johnny_h.png"}}
+      <a href="supprime" class="delete-travel">Supprimer le trajet</a>
+      <textarea rows="5" class="detail-travel">
+        Hello ! Je vais faire des courses au BonBio, je suis flexible sur l'heure et un petit détour peut se négocier ;)
+      </textarea>
+    </div>
+    {{> travelContent Depart="Chez Charles - Lumio" HeureDepart="12h00" Arrivee="La porteuse d'eau - Calvi" HeureArrivee="12h20" Retour="true" DepartRetour="La porteuse d'eau - Calvi" HeureDepartRetour="15h00" ArriveeRetour="Monte Ortu - Lumio" HeureArriveeRetour="16h05" NbPlacesUtil="3" NbPlacesDispo="1" Volume="grand sac"}}
+    <div class="container-fluid">
+    <div class="row">
+      <label> Vos demandes en attente </label>
+    </div>
+    <div class="container-request pending-request">
+      {{> demande Nom="Claude" Prenom="Francois" Img="/images/claude_francois.jpg" Attente="false"}}
+    </div>
+    <div class="row">
+      <label> Vos demandes acceptées </label>
+    </div>
+    <div class="container-request accepted-request">
+      {{> demande Nom="Berger" Prenom="Gaston" Img="/images/gaston.jpg"}}
+      {{> demande Nom="Paoli" Prenom="Pasquale" Img="/images/paoli.png"}}
+      {{> demande Nom="Beethoven" Prenom="Ludwig van" Img="/images/beethoven.jpg"}}
+    </div>
+  </div>
+</template>

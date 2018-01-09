@@ -1,35 +1,33 @@
 <template name="discussion">
   {{> navbar title="Message à Johnny" mode=1}}
   <div class="container-chat">
-      <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1">
-          <div class="col-xs-12 col-md-12">
-          	<div class="panel panel-default">
-                  <div class="panel-body msg_container_base">
-                      <div class="row msg_container base_sent">
-                          <div class="col-md-10 col-xs-10">
-                              <div class="messages msg_sent">
-                                  <p>Salut Johnny ! C'est possible de m'emmener à BonBio' tout à l'heure ?</p>
-                                  <time datetime="2018-01-13T10:00">France • 14 min</time>
-                              </div>
-                          </div>
-                          <div class="col-md-2 col-xs-2 avatar">
-                              <img src="/images/france_g.png" class=" img-responsive ">
+      <div class="chat-window" id="chat_window_1">
+        	<div class="panel panel-default">
+              <div class="panel-body msg_container_base">
+                  <div class="row msg_container base_sent">
+                      <div class="col-md-10 col-xs-10">
+                          <div class="messages msg_sent">
+                              <p>Salut Johnny ! C'est possible de m'emmener à BonBio' tout à l'heure ?</p>
+                              <time datetime="2018-01-13T10:00">France • 14 min</time>
                           </div>
                       </div>
-                      <div class="row msg_container base_receive">
-                          <div class="col-md-2 col-xs-2 avatar">
-                              <img src="/images/johnny_h.png" class=" img-responsive ">
-                          </div>
-                          <div class="col-md-10 col-xs-10">
-                              <div class="messages msg_receive">
-                                  <p>Yes ! Le bio va avec le blues !</p>
-                                  <time datetime="2018-01-13T20:00">Johnny • 4 min</time>
-                              </div>
+                      <div class="col-md-2 col-xs-2 avatar">
+                          <img src="/images/france_g.png" class=" img-responsive ">
+                      </div>
+                  </div>
+                  <div class="row msg_container base_receive">
+                      <div class="col-md-2 col-xs-2 avatar">
+                          <img src="/images/johnny_h.png" class=" img-responsive ">
+                      </div>
+                      <div class="col-md-10 col-xs-10">
+                          <div class="messages msg_receive">
+                              <p>Yes ! Le bio va avec le blues !</p>
+                              <time datetime="2018-01-13T20:00">Johnny • 4 min</time>
                           </div>
                       </div>
                   </div>
+              </div>
 
-      		  </div>
           </div>
       </div>
       <div class="panel-footer">
