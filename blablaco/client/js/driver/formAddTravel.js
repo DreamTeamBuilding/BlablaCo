@@ -3,7 +3,9 @@ Template.formAddTravel.events({
   'click #less-money' : decreaseCost,
   'click #more-money' : increaseCost,
   'click #less-passengers' : decreasePassengerCount,
-  'click #more-passengers' : increasePassengerCount
+  'click #more-passengers' : increasePassengerCount,
+  'keyup #input-departure' : updateDeparture,
+  'keyup #input-arrival' : updateArrival
 });
 
 function hideReturnMenu(event, template){
@@ -38,4 +40,11 @@ function increasePassengerCount(event, template){
   value = parseInt($("#input-number-passengers").val()) + 1;
   $("#input-number-passengers").val(value.toString());
   $("#label-number-passengers").html('passagers');
+}
+
+function updateDeparture(event, template){
+  $("#input-return-arrival").html($("#input-departure").val());
+}
+function updateArrival(event, template){
+  $("#input-return-departure").html($("#input-arrival").val());
 }
