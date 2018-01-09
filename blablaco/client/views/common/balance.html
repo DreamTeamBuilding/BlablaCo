@@ -1,0 +1,18 @@
+<template name="balance">
+  {{> navbar mode=1 title="Votre forfait"}}
+  <div class="row balance-title-panel">
+    <div class="col-xs-4">
+      <p class="balance-title">Solde : </p>
+    </div>
+    <div class="col-xs-4 col-xs-offset-4">
+      <p class="balance-title">10,50€</p>
+    </div>
+  </div>
+  {{> balanceOperation beneficiaire="Antoine H" date="15/12/17" heure="12h30" prix="2,00€" type="0"}}
+  {{> balanceOperation beneficiaire="Laurence" date="20/11/17" heure="10h02" prix="2,50€" type="1"}}
+  {{> balanceOperation beneficiaire="Rechargement" date="19/11/17" heure="20h30" prix="10,00€" type="2"}}
+  <button class="btn btn-circle balance-reload">
+    <span class="balance-button-label-xs">+</span>
+    <span class="balance-button-label">€</span>
+  </button>
+</template>

@@ -46,7 +46,7 @@
 
       {{#unless equals mode 0}}
       <div class="user-infos">
-        {{> profilInfos}}
+        {{> profilInfos nom="France G" url="/images/france_g.png"}}
       </div>
       {{/unless}}
 
@@ -57,12 +57,16 @@
         <a href="/passenger">Rechercher</a>
         <a href="/driver">Proposer</a>
         <hr>
-        <a href="#">Demandes</a>
+        <a href="/requestTravel">Demandes</a>
         <a href="/mails">Messages</a>
         <a href="#">Historique</a>
+        <a href="/balance">Mon Solde</a>
         <hr>
         {{/unless}}
 
+        {{#if equals mode 0}}
+        <a href="/">Home</a>
+        {{/if}}
         <a href="/parameters">Paramètres</a>
         <a href="/help">Aide</a>
         <hr>

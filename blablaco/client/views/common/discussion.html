@@ -1,6 +1,6 @@
 <template name="discussion">
   {{> navbar title="Messagerie" mode=1}}
-  <div class="container">
+  <div class="container-chat">
       <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1">
           <div class="col-xs-12 col-md-12">
           	<div class="panel panel-default">
@@ -13,7 +13,7 @@
                               </div>
                           </div>
                           <div class="col-md-2 col-xs-2 avatar">
-                              <img src="/images/France_G.jpg" class=" img-responsive ">
+                              <img src="/images/france_g.png" class=" img-responsive ">
                           </div>
                       </div>
                       <div class="row msg_container base_receive">
@@ -22,7 +22,7 @@
                           </div>
                           <div class="col-md-10 col-xs-10">
                               <div class="messages msg_receive">
-                                  <p>Ca roule ma poule</p>
+                                  <p>Yes ! Le bio va avec le blues !</p>
                                   <time datetime="2018-01-13T20:00">Johnny • 4 min</time>
                               </div>
                           </div>
@@ -32,13 +32,14 @@
       		  </div>
           </div>
       </div>
-  </div>
-  <div class="panel-footer">
-      <div class="input-group">
-          <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Ecrivez ici" />
-          <span class="input-group-btn">
-          <button class="btn btn-primary btn-sm" id="btn-chat">Envoyer</button>
-          </span>
+      <div class="panel-footer">
+          <div class="input-group">
+              <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Ecrivez ici" />
+              <span class="input-group-btn">
+              <button class="btn btn-primary btn-sm" id="btn-chat">Envoyer</button>
+              </span>
+          </div>
       </div>
   </div>
+
 </template>

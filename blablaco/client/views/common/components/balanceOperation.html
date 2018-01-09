@@ -1,0 +1,36 @@
+<template name="balanceOperation">
+  <div class="row balanceOperation">
+    <table>
+      <tr>
+        <td class="size1">
+          <p>
+            <span class="balanceOperation-beneficiaire">
+              {{#if equals type 0}}
+              À :
+              {{/if}}
+              {{#if equals type 1}}
+              De :
+              {{/if}}
+              {{beneficiaire}}
+            </span><br><span class="balanceOperation-date">{{date}} {{heure}}</span>
+          </p>
+        </td>
+        <td>
+          <p class="balanceOperation-prix">
+            {{#if equals type 0}}
+            -
+            {{/if}}
+            {{#if equals type 1}}
+            +
+            {{/if}}
+            {{#if equals type 2}}
+            + 
+            {{/if}}
+            {{prix}}
+          </p>
+        </td>
+      </tr>
+    </table>
+    <hr>
+  </div>
+</template>

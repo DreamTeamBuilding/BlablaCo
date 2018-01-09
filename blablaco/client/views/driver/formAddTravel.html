@@ -4,7 +4,7 @@
   {{> navbar title="Proposer un trajet" mode=2}}
   <div class="formAddTravel">
     <form action="" method="POST" class="form-group searchForm stylised-menu">
-      <textarea class="" rows="3" type="text" placeholder="Détails du trajet..." id="input-details" name="details"></textarea>
+      <textarea class="form-control" rows="1" type="text" placeholder="Détails du trajet..." id="input-details" name="details"></textarea>
       <div class="container">
         <div class="departure row">
           <div class="col-sm ride">
@@ -13,28 +13,30 @@
             <div class="arrow-down"></div>
             <div class="circle"></div>
           </div>
-          <div class="col-sm">
+          <div class="col-sm beside-ride">
             <div>
-              <label class="small italic">Départ à</label>
-              <input class=""  type="time" id="input-departure-hour" name="departure-hour">
+              <label class="small italic" for="input-departure-hour">Départ à</label>
+              <input class="small-input"  type="time" id="input-departure-hour" name="departure-hour">
             </div>
             <div>
-              <label class="small">De</label>
-              <input class="" type="text" id="input-departure" name="departure">
+              <label class="small" for="input-departure">De</label>
+              <input class="small-input" type="text" id="input-departure" name="departure">
             </div>
             <div>
-              <label class="small italic">Arrivée à</label>
-              <input class=""  type="time" id="input-arrival-hour" name="arrival-hour">
+              <label class="small italic top-margin-30" for="input-arrival-hour">Arrivée à</label>
+              <input class="small-input"  type="time" id="input-arrival-hour" name="arrival-hour">
             </div>
             <div>
-              <label class="small">Vers</label>
-              <input class="" type="text" id="input-arrival" name="arrival">
+              <label class="small" for="input-arrival">Vers</label>
+              <input class="small-input" type="text" id="input-arrival" name="arrival">
             </div>
           </div>
         </div>
-        <div class="row">
-          <label>Retour</label>
-          <input data-toggle="toggle" class="toggle-return" data-on="Oui" data-off="Non" type="checkbox" id="toggle-return" name="return" value="false">
+        <div class="full-width top-margin-30">
+          <div class="pull-right">
+            <input data-toggle="toggle" class="toggle-return pull-right" data-on="Oui" data-off="Non" type="checkbox" id="toggle-return" name="return" value="false">
+          </div>
+          <label for="toggle-return">Retour</label>
         </div>
         <div class="return-form" hidden>
           <div class="row">
@@ -44,41 +46,48 @@
               <div class="arrow-down"></div>
               <div class="circle"></div>
             </div>
-            <div class="col-sm">
+            <div class="col-sm beside-ride">
               <div>
-                <label class="small italic">Départ à</label>
-                <input class="" type="time" id="input-return-departure-hour" name="return-departure-hour">
+                <label class="small italic" for="input-return-departure-hour">Départ à</label>
+                <input class="small-input" type="time" id="input-return-departure-hour" name="return-departure-hour">
               </div>
               <div>
                 <label class="small">De</label>
-                <input class="" type="text" id="input-return-departure" name="return-departure">
+          			<span class="info" id="input-return-departure"> </span>
               </div>
               <div>
-                <label class="small italic">Arrivée à</label>
-                <input class="" type="time" id="input-return-arrival-hour" name="return-arrival-hour">
+                <label class="small italic top-margin-30" for="input-return-arrival-hour">Arrivée à</label>
+                <input class="small-input" type="time" id="input-return-arrival-hour" name="return-arrival-hour">
               </div>
               <div>
                 <label class="small">Vers</label>
-                <input class="" type="text" id="input-return-arrival" name="return-arrival">
+          			<span class="info" id="input-return-arrival"> </span>
               </div>
             </div>
           </div>
         </div>
-        <label>Volume accepté</label>
-        <select class="form-control" id="input-bag-size">
-          <option>Petit sac</option>
-          <option>Sac de voyage</option>
-          <option>Valise</option>
-        </select>
-        <br>
-        <input class="" type="number" id="input-return-arrival" name="passengers-number">
-        <label>passager</label>
-        <br>
-        <input class="" type="number" id="input-return-arrival" name="price">
-        <label>€</label>
-        <br>
-        <div class="centered">
-          <button type="submit" class="btn">Valider</button>
+
+        <div class="details-new-travel top-margin-30">
+          <label for="input-bag-size">Volume accepté</label>
+          <select class="form-control" id="input-bag-size">
+            <option>20 Litres - Petit sac</option>
+            <option>40 Litres - Sac de voyage</option>
+            <option>70 Litres - Valise</option>
+          </select>
+          <br>
+          <span class="glyphicon glyphicon-triangle-left small" aria-hidden="true" id="less-passengers"></span>
+          <input class="" size="2" type="number" id="input-number-passengers" name="passengers-number" value="1" min=1>
+          <span class="glyphicon glyphicon-triangle-right small" aria-hidden="true" id="more-passengers"></span>
+          <label for="input-number-passengers" id="label-number-passengers">passager</label>
+          <br>
+          <span class="glyphicon glyphicon-triangle-left small" aria-hidden="true" id="less-money"></span>
+          <input class="" size="2" type="number" id="input-price" name="price" min=0>
+          <span class="glyphicon glyphicon-triangle-right small" aria-hidden="true" id="more-money"></span>
+          <label for="input-price">€</label>
+          <br>
+          <div class="centered">
+            <button type="submit" class="btn">Valider</button>
+          </div>
         </div>
       </div>
     </form>
