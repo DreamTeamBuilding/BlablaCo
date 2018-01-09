@@ -20,3 +20,10 @@ FlowRouter.route('/trajet/:id_trajet', {
     BlazeLayout.render('container', {content : "details"});
   }
 });
+
+FlowRouter.route('/requestTravel', {
+  name: 'requestTravel',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "requestTravel"});
+  }
+});
