@@ -27,3 +27,10 @@ FlowRouter.route('/requestTravel', {
     BlazeLayout.render('container', {content : "requestTravel"});
   }
 });
+
+FlowRouter.route('/noteTravel', {
+  name: 'noteTravel',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "noteTravel"});
+  }
+});

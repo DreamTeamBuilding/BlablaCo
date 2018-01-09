@@ -1,0 +1,44 @@
+<template name="noteTravel">
+  {{> navbar mode=1 title="Noter le trajet"}}
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <table>
+        <tr>
+          <td>
+            {{> avatar url="/images/johnny.jpg"}}
+          </td>
+          <td class="full-width">
+            <p class="driver-name">Johnny H</p>
+            <p class="driver-type">
+              Conducteur
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <p>La Doua - BonBio'<br>04/12/17 à 8h18</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="rating">
+      <a href="#5" title="5 étoiles">★</a>
+      <a href="#4" title="4 étoiles">★</a>
+      <a href="#3" title="3 étoiles">★</a>
+      <a href="#2" title="2 étoiles">★</a>
+      <a href="#1" title="1 étoile">★</a>
+  	</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <textarea rows="4" cols="50" placeholder="Laisser un commentaire..."></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <button class="btn">Valider</button>
+    </div>
+  </div>
+</template>
