@@ -54,3 +54,10 @@ FlowRouter.route('/history', {
     BlazeLayout.render('container', {content : "history"});
   }
 });
+
+FlowRouter.route('/balance', {
+  name: 'balance',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "balance"});
+  }
+});

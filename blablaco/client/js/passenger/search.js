@@ -10,7 +10,9 @@ Template.requestTravel.events({
 Template.searchResults.events({
   'click .switch-button' :  switchInputs,
   'click .hide-filters' :  hideFilters,
-  'click .show-filters' :  showFilters
+  'click .show-filters' :  showFilters,
+  'input #toleranceSlider' : updateRange,
+  'input #toleranceSliderH' : updateRangeH,
 });
 Template.searchResults.onRendered(initFilters);
 
@@ -41,6 +43,13 @@ function hideFilters(event, template){
 function showFilters(event, template){
     $('.filters').removeAttr('hidden');
     $('.replace-filters').attr('hidden', true);
+}
+
+function updateRange(event, template){
+  $('#label-slider-range').html($('#toleranceSlider').val().toString());
+}
+function updateRangeH(event, template){
+  $('#label-slider-rangeH').html($('#toleranceSliderH').val().toString());
 }
 
 function initFilters(){
