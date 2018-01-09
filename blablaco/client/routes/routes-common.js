@@ -47,3 +47,17 @@ FlowRouter.route('/discussion/:id_discussion', {
     BlazeLayout.render('container', {content : "discussion"});
   }
 });
+
+FlowRouter.route('/history', {
+  name: 'history',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "history"});
+  }
+});
+
+FlowRouter.route('/balance', {
+  name: 'balance',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "balance"});
+  }
+});
