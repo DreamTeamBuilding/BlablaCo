@@ -4,12 +4,17 @@ Template.searchMenu.events({
   'click .switch-button' :  switchInputs
 });
 
+Template.requestTravel.events({
+  'keyup .text-input-trigger' : hideShowSideOptions
+})
 Template.searchResults.events({
   'click .switch-button' :  switchInputs,
   'click .hide-filters' :  hideFilters,
   'click .show-filters' :  showFilters
 });
 Template.searchResults.onRendered(initFilters);
+
+
 function hideShowSideOptions(event, template) {
   if($('#depart-input').val()!="" && $('#arrivee-input').val()!=""){
     $('.search-advanced-options').removeAttr('hidden');
