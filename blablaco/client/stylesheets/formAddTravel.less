@@ -1,0 +1,32 @@
+#input-bag-size{
+  width : 150px;
+  display : inline-block;
+}
+
+#input-price, #input-number-passengers{
+  width : 45px;
+}
+
+.details-new-travel{
+  margin : 20px 0 5px 0;
+  text-align: center;
+}
+#less-money, #more-money, #less-passengers, #more-passengers{
+  cursor : pointer;
+}
+
+.formAddTravel{
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+
+  .toggle .btn{
+    padding : 2px;
+  }
+  .toggle.btn{
+    min-height : 20px;
+  }
+}
