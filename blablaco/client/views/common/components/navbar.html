@@ -60,9 +60,13 @@
         <a href="#">Demandes</a>
         <a href="/mails">Messages</a>
         <a href="#">Historique</a>
+        <a href="#">Mon Solde</a>
         <hr>
         {{/unless}}
 
+        {{#if equals mode 0}}
+        <a href="/">Home</a>
+        {{/if}}
         <a href="/parameters">Paramètres</a>
         <a href="/help">Aide</a>
         <hr>
