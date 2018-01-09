@@ -1,0 +1,18 @@
+<template name="demande">
+<div class="row request">
+  <div class="col-xs-2">
+    {{> avatar url=Img}}
+  </div>
+  <div class="col-xs-10">
+    <p>
+      {{Prenom}} {{Nom}}
+      {{#if Attente}}
+        <div class="action-request">
+          <span class="glyphicon glyphicon-ok accept-request"></span>
+          <span class="glyphicon glyphicon-remove"></span>
+        </div>
+      {{/if}}
+    </p>
+  </div>
+</div>
+</template>

@@ -1,0 +1,21 @@
+<template name="formEditTravel">
+    {{> navbar title="Éditer un trajet" mode=2}}
+    <div class="container-details">
+      {{> travelHeader Prix="2"}}
+      <a href="www.example.com" class="delete-travel">Supprimer le trajet</a>
+      <textarea rows="5" class="detail-travel">
+        Hello ! Je vais faire des courses au BonBio, je suis flexible sur l'heure et un petit détour peut se négocier ;)
+      </textarea>
+    </div>
+    {{> travelContent Depart="Lumio" HeureDepart="12h00" Arrivee="Calvi" HeureArrivee="12h20" Retour="true" DepartRetour="Calvi" HeureDepartRetour="15h00" ArriveeRetour="Lumio" HeureArriveeRetour="16h00" NbPlacesUtil="3" NbPlacesDispo="1" Volume="grand sac"}}
+    Vos demandes en attente
+    <div class="container-request pending-request">
+      {{> demande Nom="Claude" Prenom="Francois" Img="/images/claude_francois.jpg" Attente="false"}}
+    </div>
+    Vos demandes acceptées
+    <div class="container-request accepted-request">
+      {{> demande Nom="Berger" Prenom="Gaston" Img="/images/gaston.jpg" Attente="false"}}
+      {{> demande Nom="Paoli" Prenom="Pasquale" Img="/images/paoli.png" Attente="false"}}
+      {{> demande Nom="Beethoven" Prenom="Ludwig van" Img="/images/beethoven.jpg" Attente="false"}}
+    </div>
+</template>
