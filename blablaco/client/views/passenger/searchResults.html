@@ -32,12 +32,26 @@
 
   <div class="filter-params">
     <div class="filters">
-       Here are all the filter
-      <br>
-      <br>
-      <span class="hide-filters">
-        Cacher les filtres <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><br>
-      </span>
+      <div class="row">
+        <div class="col-xs-8">
+          <span>Rayon : <span id="label-slider-range">2</span> km</span>
+          <input type="range" min=0 max=50 value=2 class="slider" id="toleranceSlider">
+          <br>
+          <br>
+          <span>Flexibilité : <span id="label-slider-rangeH">1</span> heure(s)</span>
+          <input type="range" min=0 max=12 value=1 class="slider" id="toleranceSliderH">
+        </div>
+        <div class="col-xs-3">
+            <label for="filter-aller-retour">
+              <input type="checkbox" name="round-trip" id="filter-aller-retour"> Uniquement A/R
+            </label>
+        </div>
+        <div class="col-xs-12 top-margin-30">
+          <span class="hide-filters">
+            Cacher les filtres <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><br>
+          </span>
+        </div>
+      </div>
     </div>
 
     <div class="replace-filters" hidden>
