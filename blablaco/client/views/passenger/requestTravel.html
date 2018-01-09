@@ -2,43 +2,45 @@
   {{> navbar mode=1 title="Demander un trajet"}}
 
   <form action="/" method="POST" class="form-group requestForm stylised-menu">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-1">
-          <input class="form-control input-lg text-input-trigger" type="text" placeholder="Depart" id="depart-input" name="depart">
-          <hr>
-          <input class="form-control input-lg text-input-trigger" type="text" placeholder="Arrivée" id="arrivee-input" name="arrivee">
+    <div class=" alert alert-warning">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-1">
+            <input class="form-control light input-lg text-input-trigger" type="text" placeholder="Depart" id="depart-input" name="depart">
+            <hr>
+            <input class="form-control light input-lg text-input-trigger" type="text" placeholder="Arrivée" id="arrivee-input" name="arrivee">
+        </div>
+        <div class="col-xs-1 col-md-2 no-padding">
+          <button type="button" class="btn btn-link switch-button full-height" aria-label="Menu">
+            <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="col-xs-1 col-md-2 no-padding">
+          <button type="button" class="btn btn-link voice-button full-height" aria-label="Menu">
+            <span class="fa fa-microphone" aria-hidden="true"></span>
+          </button>
+        </div>
       </div>
-      <div class="col-xs-1 col-md-2 no-padding">
-        <button type="button" class="btn btn-link switch-button full-height" aria-label="Menu">
-          <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
-        </button>
+    </div>
+    <div class="search-advanced-options" hidden>
+      <div class="search-advanced-row">
+        <label for="input-date"> Le </label>
+        <input class="" type="date" name="date" id="input-date">
       </div>
-      <div class="col-xs-1 col-md-2 no-padding">
-        <button type="button" class="btn btn-link voice-button full-height" aria-label="Menu">
-          <span class="fa fa-microphone" aria-hidden="true"></span>
-        </button>
+      <div class="search-advanced-row">
+        <label for="input-time">   A partir de </label>
+        <input class="" type="time" name="time" id="input-time">
       </div>
-    </div>
-    <div class="search-advanced-row">
-      <label for="input-date"> Le </label>
-      <input class="" type="date" name="date" id="input-date">
-    </div>
-    <div class="search-advanced-row">
-      <label for="input-time">   A partir de </label>
-      <input class="" type="time" name="time" id="input-time">
-    </div>
-    <div class="search-advanced-row">
-      <label for="input-aller-retour">
-        <input type="checkbox" name="round-trip" id="input-aller-retour">Aller-Retour
-      </label>
-    </div>
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2">
+      <div class="search-advanced-row top-margin-30">
+        <label for="input-aller-retour">
+          <input type="checkbox" name="round-trip" id="input-aller-retour"> Aller-Retour
+        </label>
+      </div>
+      <div class="centered top-margin-30 info">
         <p class="request-text">Vous revevrez une notification <br>si un trajet correspond à votre demande</p>
       </div>
-    </div>
-    <div class="search-advanced-row">
-      <button type="submit" class="btn">Créer la demande</button>
+      <div class="top-margin-30 centered">
+        <button type="submit" class="btn">Créer la demande</button>
+      </div>
     </div>
   </form>
 

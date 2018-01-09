@@ -4,7 +4,7 @@
   {{> navbar title="Proposer un trajet" mode=2}}
   <div class="formAddTravel">
     <form action="" method="POST" class="form-group searchForm stylised-menu">
-      <textarea class="" rows="3" type="text" placeholder="Détails du trajet..." id="input-details" name="details"></textarea>
+      <textarea class="form-control" rows="1" type="text" placeholder="Détails du trajet..." id="input-details" name="details"></textarea>
       <div class="container">
         <div class="departure row">
           <div class="col-sm ride">
@@ -13,22 +13,22 @@
             <div class="arrow-down"></div>
             <div class="circle"></div>
           </div>
-          <div class="col-sm">
+          <div class="col-sm beside-ride">
             <div>
               <label class="small italic">Départ à</label>
-              <input class=""  type="time" id="input-departure-hour" name="departure-hour">
+              <input class="small-input"  type="time" id="input-departure-hour" name="departure-hour">
             </div>
             <div>
               <label class="small">De</label>
-              <input class="" type="text" id="input-departure" name="departure">
+              <input class="small-input" type="text" id="input-departure" name="departure">
             </div>
             <div>
-              <label class="small italic">Arrivée à</label>
-              <input class=""  type="time" id="input-arrival-hour" name="arrival-hour">
+              <label class="small italic top-margin-30">Arrivée à</label>
+              <input class="small-input"  type="time" id="input-arrival-hour" name="arrival-hour">
             </div>
             <div>
               <label class="small">Vers</label>
-              <input class="" type="text" id="input-arrival" name="arrival">
+              <input class="small-input" type="text" id="input-arrival" name="arrival">
             </div>
           </div>
         </div>
@@ -44,22 +44,22 @@
               <div class="arrow-down"></div>
               <div class="circle"></div>
             </div>
-            <div class="col-sm">
+            <div class="col-sm beside-ride">
               <div>
                 <label class="small italic">Départ à</label>
-                <input class="" type="time" id="input-return-departure-hour" name="return-departure-hour">
+                <input class="small-input" type="time" id="input-return-departure-hour" name="return-departure-hour">
               </div>
               <div>
                 <label class="small">De</label>
-                <input class="" type="text" id="input-return-departure" name="return-departure">
+                <input class="small-input" type="text" id="input-return-departure" name="return-departure">
               </div>
               <div>
-                <label class="small italic">Arrivée à</label>
-                <input class="" type="time" id="input-return-arrival-hour" name="return-arrival-hour">
+                <label class="small italic top-margin-30">Arrivée à</label>
+                <input class="small-input" type="time" id="input-return-arrival-hour" name="return-arrival-hour">
               </div>
               <div>
                 <label class="small">Vers</label>
-                <input class="" type="text" id="input-return-arrival" name="return-arrival">
+                <input class="small-input" type="text" id="input-return-arrival" name="return-arrival">
               </div>
             </div>
           </div>
