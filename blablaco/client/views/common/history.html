@@ -1,0 +1,16 @@
+<template name="history">
+  {{> navbar title="Mes trajets" mode=1}}
+  <div>
+    {{> singleDriverDrive Prix="1" Date="04/12/2017" Heure="8h18" Depart="La Doua" Arrivee="Bon Bio'" Percentage="seventyfive" PassengerNumber="3"}}
+    {{> singleSearchResult Prix="2" Date="04/12/2017" Heure="9h00" Conducteur="Johnny Bravo" Depart="La Doua" Arrivee="Carrefour" ProfilePicture="/images/johnny_bravo.png" History="history-element"}}
+
+  </div>
+  <div class="old-drives">
+    <span class="show-filters">
+      Anciens trajets
+    </span>
+  </div>
+  <div>
+    {{> singleDriverDrive Prix="2" Date="04/12/2017" Heure="9h10" Depart="La Doua" Arrivee="Bricoland" Percentage="onehundred" PassengerNumber="2"}}
+  </div>
+</template>

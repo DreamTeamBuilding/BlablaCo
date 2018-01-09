@@ -48,6 +48,13 @@ FlowRouter.route('/discussion/:id_discussion', {
   }
 });
 
+FlowRouter.route('/history', {
+  name: 'history',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "history"});
+  }
+});
+
 FlowRouter.route('/balance', {
   name: 'balance',
   action(params, queryParams) {
