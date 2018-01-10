@@ -8,8 +8,12 @@
       {{Prenom}} {{Nom}}
       {{#if Attente}}
         <div class="action-request">
-          <span class="glyphicon glyphicon-ok accept-request"></span>
-          <span class="glyphicon glyphicon-remove"></span>
+          <button id="accept" type="button" class="btn btn-link switch-button full-height">
+            <span class="glyphicon glyphicon-ok accept-request"></span>
+          </button>
+          <button id="refuse" type="button" class="btn btn-link switch-button full-height">
+            <span class="glyphicon glyphicon-remove"></span>
+          </button>
         </div>
       {{/if}}
     </p>

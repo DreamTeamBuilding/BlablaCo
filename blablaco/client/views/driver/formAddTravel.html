@@ -3,7 +3,7 @@
   <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
   {{> navbar title="Proposer un trajet" mode=2}}
   <div class="formAddTravel">
-    <form action="" method="POST" class="form-group searchForm stylised-menu">
+    <form action="/history?newRequestNotification=true" method="POST" class="form-group searchForm stylised-menu">
       <textarea class="form-control" rows="1" type="text" placeholder="Détails du trajet..." id="input-details" name="details"></textarea>
       <div class="container">
         <div class="departure row">

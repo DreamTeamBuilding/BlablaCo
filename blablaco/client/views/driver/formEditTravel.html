@@ -1,7 +1,7 @@
 <template name="formEditTravel">
     {{> navbar title="Éditer un trajet" mode=2}}
     <div class="container-details">
-      {{> travelHeader Prix="2" Nom="Johnny H" Avatar="/images/johnny_h.png"}}
+      {{> travelHeader Prix="2" Nom="France G" Avatar="/images/france_g.png"}}
       <a href="supprime" class="delete-travel">Supprimer le trajet</a>
       <textarea rows="5" class="detail-travel">
         Hello ! Je vais faire des courses au BonBio, je suis flexible sur l'heure et un petit détour peut se négocier ;)
@@ -10,13 +10,19 @@
     {{> travelContent Depart="Chez Charles - Lumio" HeureDepart="12h00" Arrivee="La porteuse d'eau - Calvi" HeureArrivee="12h20" Retour="true" DepartRetour="La porteuse d'eau - Calvi" HeureDepartRetour="15h00" ArriveeRetour="Monte Ortu - Lumio" HeureArriveeRetour="16h05" NbPlacesUtil="3" NbPlacesDispo="1" Volume="grand sac"}}
     <div class="container-fluid">
     <div class="row">
-      <label> Vos demandes en attente </label>
+      <label class="pending-request-label"> Vos demandes en attente </label>
+    </div>
+    <div class="row">
+      <label class="no-pending-request-label" hidden> Vous n'avez aucune demande en attente </label>
     </div>
     <div class="container-request pending-request">
       {{> demande Nom="Claude" Prenom="Francois" Img="/images/claude_francois.jpg" Attente="false"}}
     </div>
     <div class="row">
       <label> Vos demandes acceptées </label>
+    </div>
+    <div class="container-request accepted-request new-accepted-request" hidden>
+      {{> demande Nom="Claude" Prenom="Francois" Img="/images/claude_francois.jpg"}}
     </div>
     <div class="container-request accepted-request">
       {{> demande Nom="Berger" Prenom="Gaston" Img="/images/gaston.jpg"}}
