@@ -4,17 +4,20 @@
       <div class="chat-window" id="chat_window_1">
         	<div class="panel panel-default">
               <div class="panel-body msg_container_base">
-                  <div id="message-first" class="row msg_container base_sent message-first">
+                <div id="message-first" hidden>
+                  <div class="row msg_container base_sent message-first">
                       <div class="col-md-10 col-xs-10">
                           <div class="messages msg_sent">
                               <p>Salut Johnny ! C'est possible de m'emmener à BonBio' tout à l'heure ?</p>
-                              <time datetime="2018-01-13T10:00">France • 14 min</time>
+                              <time datetime="2018-01-13T10:00">France • 10 min</time>
                           </div>
                       </div>
                       <div class="col-md-2 col-xs-2 avatar">
                           <img src="/images/france_g.png" class=" img-responsive ">
                       </div>
                   </div>
+                </div>
+                <div id="message-second" hidden>
                   <div class="row msg_container base_receive">
                       <div class="col-md-2 col-xs-2 avatar">
                           <img src="/images/johnny_h.png" class=" img-responsive ">
@@ -22,11 +25,38 @@
                       <div class="col-md-10 col-xs-10">
                           <div class="messages msg_receive">
                               <p>Yes ! Le bio va avec le blues !</p>
-                              <time datetime="2018-01-13T20:00">Johnny • 4 min</time>
+                              <time datetime="2018-01-13T20:00">Johnny • 8 min</time>
                           </div>
                       </div>
+                    </div>
                   </div>
-              </div>
+                  <div id="message-third" hidden>
+                    <div class="row msg_container base_sent message-first">
+                        <div class="col-md-10 col-xs-10">
+                            <div class="messages msg_sent">
+                                <p>Je t'attends devand le RU :)</p>
+                                <time datetime="2018-01-13T10:00">France • 5 min</time>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="/images/france_g.png" class=" img-responsive ">
+                        </div>
+                    </div>
+                  </div>
+                  <div id="message-fourth" hidden>
+                    <div class="row msg_container base_receive">
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="/images/johnny_h.png" class=" img-responsive ">
+                        </div>
+                        <div class="col-md-10 col-xs-10">
+                            <div class="messages msg_receive">
+                                <p>J'arrive !</p>
+                                <time datetime="2018-01-13T20:00">Johnny • 1 min</time>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
 
           </div>
       </div>

@@ -1,0 +1,51 @@
+<template name="searchMenuNoteNotification">
+  <div class="green-background">
+    {{> navbar  mode=1}}
+    <div class="searchMenu">
+      <div class="jumbotron">
+        <h1 class="display-3">Bonjour,</h1>
+        <p>Où désirez-vous aller ?</p>
+      </div>
+      <form action="/searchResults" method="POST" class="form-group searchForm stylised-menu">
+        <div class="row">
+          <div class="col-xs-9 col-md-8">
+              <input class="form-control input-lg text-input-trigger" type="text" placeholder="Depart" id="depart-input" name="depart">
+              <hr>
+              <input class="form-control input-lg text-input-trigger" type="text" placeholder="Arrivée" id="arrivee-input" name="arrivee">
+          </div>
+          <div class="col-xs-1 col-md-2 no-padding">
+            <button type="button" class="btn btn-link switch-button full-height" aria-label="Menu">
+              <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="col-xs-1 col-md-2 no-padding">
+            <button type="button" class="btn btn-link voice-button full-height" aria-label="Menu">
+              <span class="fa fa-microphone" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="search-advanced-options" hidden>
+          <hr>
+          <div class="search-advanced-row">
+            <label for="input-date"> Le </label>
+            <input class="" type="date" name="date" id="input-date">
+          </div>
+          <div class="search-advanced-row">
+            <label for="input-time">   A partir de </label>
+            <input class="" type="time" name="time" id="input-time">
+          </div>
+          <div class="search-advanced-row">
+            <label for="input-aller-retour">
+              <input type="checkbox" name="round-trip" id="input-aller-retour">Aller-Retour
+            </label>
+          </div>
+          <div class="search-advanced-row">
+            <button type="submit" class="btn">Rechercher</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  {{> notification NotificationText="Votre trajet s'est-il bien passé ? !" NotificationLink="/noteTravel" LinkText="Appuyez ici pour noter Johnny H."}}
+</template>

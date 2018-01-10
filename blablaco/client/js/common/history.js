@@ -1,4 +1,4 @@
-$(Template.history).ready ( function(){
+Template.history.onRendered ( function(){
   var url_string = document.URL;
   var url = new URL(url_string);
   var notification = url.searchParams.get('newRequestNotification');

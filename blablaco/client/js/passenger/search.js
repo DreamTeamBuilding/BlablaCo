@@ -4,6 +4,12 @@ Template.searchMenu.events({
   'click .switch-button' :  switchInputs
 });
 
+Template.searchMenuNoteNotification.events({
+  'keyup .text-input-trigger' : hideShowSideOptions,
+  'click .voice-button' : vocalInput,
+  'click .switch-button' :  switchInputs
+});
+
 Template.requestTravel.events({
   'keyup .text-input-trigger' : hideShowSideOptions
 })
@@ -16,6 +22,13 @@ Template.searchResults.events({
 });
 Template.searchResults.onRendered(initFilters);
 
+Template.searchMenuNoteNotification.onRendered ( function(){
+  window.setTimeout(showPhoneNotification, 1000);
+});
+
+function showPhoneNotification() {
+  $('#dialog').dialog({ width: $(window).width() /* insert your options */ }).dialog('widget').position({ my: 'top', at: 'top', of: $(this) });
+}
 
 function hideShowSideOptions(event, template) {
   if($('#depart-input').val()!="" && $('#arrivee-input').val()!=""){

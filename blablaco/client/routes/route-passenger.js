@@ -6,6 +6,13 @@ FlowRouter.route('/passenger', {
   }
 });
 
+FlowRouter.route('/passenger2', {
+  name: 'searchMenuNoteNotification',
+  action(params, queryParams) {
+    BlazeLayout.render('container', {content : "searchMenuNoteNotification"});
+  }
+});
+
 FlowRouter.route('/searchResults', {
   name: 'searchResults',
   action(params, queryParams) {
