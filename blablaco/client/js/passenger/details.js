@@ -3,8 +3,10 @@ Template.details.events({
 });
 
 function showNotif(event, template){
+  /*
   $('#notification-reservation').removeAttr('hidden');
   window.setTimeout(showPhoneNotification, 1000);
+  */
 }
 
 function showPhoneNotification() {

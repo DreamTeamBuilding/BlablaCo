@@ -23,7 +23,9 @@ Template.searchResults.events({
 Template.searchResults.onRendered(initFilters);
 
 Template.searchMenuNoteNotification.onRendered ( function(){
+  /*
   window.setTimeout(showPhoneNotification, 1000);
+  */
 });
 
 function showPhoneNotification() {
